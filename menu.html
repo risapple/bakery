@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>風のベーカリー - メニュー</title>
+  <meta name="description" content="毎日食べたいこだわりのパン屋さん">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/f53b9b4dd9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html"><img src="images/kaze-logo.png" alt="風のベーカリー"></a>
+    </h1>
+    <a class="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/nav-home.png" alt="ホーム"></a></li>
+        <li><a href="value.html"><img src="images/nav-value.png" alt="こだわり"></a></li>
+        <li><a href="menu.html"><img src="images/nav-menu.png" alt="メニュー"></a></li>
+        <li><a href="shop.html"><img src="images/nav-shop.png" alt="お店"></a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>MENU</li>
+      </ul>
+    </div>
+    <article>
+      <a class="theme">
+        <img src="images/menu-logo.png" alt="私たちのパン">
+      </a>
+      <div class="menu">
+        <figure>
+          <img src="images/pan1.jpg" alt="">
+          <figcaption>みるくパン<br>100円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan2.jpg" alt="">
+          <figcaption>プチフランス<br>120円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan3.jpg" alt="">
+          <figcaption>バタール<br>130円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan4.jpg" alt="">
+          <figcaption>ブリオッシュ<br>160円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan5.jpg" alt="">
+          <figcaption>シュガーケイク<br>150円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan6.jpg" alt="">
+          <figcaption>ベーグル<br>140円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan7.jpg" alt="">
+          <figcaption>ハートフランス<br>200円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan8.jpg" alt="">
+          <figcaption>カイザー<br>180円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan9.jpg" alt="">
+          <figcaption>ハードパン<br>330円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan10.jpg" alt="">
+          <figcaption>バゲット<br>280円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pan11.jpg" alt="">
+          <figcaption>スライスフランス<br>140円</figcaption>
+        </figure>
+        <figure>
+          <img src="images/menu-pan.png" alt="他にもまだあるよ">
+        </figure>
+      </div>
+    </article>
+  <footer>
+    <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+    <p><small>Copyright &copy;2021 Kazeno Bakery All Rights Reserved.</small></p>
+  </footer>
+  <script>
+    $('.btn').on('click',function() {
+      if( $(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('nav').addClass('close').removeClass('open');
+      } else {
+        $(this).addClass('active');
+        $('nav').addClass('open').removeClass('close');
+      }
+    })
+  </script>
+  <script>
+    jQuery(function() {
+      var pagetop = $('#page_top');
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 800)
+        {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

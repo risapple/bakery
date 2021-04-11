@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+body {
+  font-family: "遊明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif; 
+	margin: 0 auto;
+	padding: 0;
+	/* width: 900px; */
+	width: 90%;
+}
+
+/*baseここから*/
+header h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+header h1 a img {
+  width: 60%;
+  height: auto;
+}
+.btn {
+	display: none;
+}
+nav.open {
+	display: block;
+}
+nav.close {
+	display: none;
+}
+nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li {
+	width: 225px;
+	height: auto;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background: rgb(180, 230, 235);
+  border-radius: 50px;
+}
+nav ul li a {
+	overflow: hidden;
+}
+nav ul li a img {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+}
+.breadcrumb {
+	margin: 0 0 50px;
+	padding: 0;
+}
+.breadcrumb li {
+	display: inline;
+	list-style: none;
+}
+.breadcrumb li:first-child:after {
+	content: '>';
+	padding: 0 0.2em;
+}
+article {
+	height: auto;
+}
+.theme {
+	margin: 0;
+}
+.theme img {
+	display: block;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+footer {
+  margin: 50px;
+	text-align: center;
+}
+#page_top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	background: #7CB9D7;
+	opacity: 0.7;
+	border-radius: 50%;
+}
+#page_top a {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+}
+#page_top a::before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+  top: -5px;
+	margin: auto;
+	text-align: center;
+}
+/*baseここまで*/
+
+/*indexここから*/
+.slideshow {
+	display: block;
+	margin: 50px 0 0 0;
+	padding: 0;
+  width: 100%;
+}
+.slideshow li {
+	margin: 0 0 0 -40px;
+	padding: 0;
+	list-style: none;
+}
+.slideshow img {
+	width: 100%;
+	height: auto;
+}
+.news {
+	max-width: 100%;
+	margin: 0 auto;
+}
+.news h2 {
+  margin: 50px 0 0 0;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+.news ul {
+	padding-left: 0;
+}
+.news li {
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 5px dotted #7CB9D7;
+	font-size: 18px;
+}
+.day {
+	align-items: center;
+	margin-right: 50px;
+}
+.day time {
+	display: block;
+	width: 126px;
+}
+.text {
+	/* text-align: left; */
+	margin: 0;
+	line-height: 1.5;
+}
+.like {
+	position: relative;
+}
+.like h2 {
+	margin: 50px 0 0 0;
+	font-size: 30px;
+}
+.like p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.like a {
+	width: 80%;
+	height: auto;
+}
+.like img {
+	display: block;
+	margin: -50px auto 0 auto;
+	width: 80%;
+	height: auto;
+}
+.like p:nth-child(2n+1) {
+	position: absolute;
+	top: 13%;
+	right: 14%;
+}
+.like p:nth-child(2n) {
+	position: absolute;
+	top: 56%;
+	left: 12%;
+}
+.like p:last-child {
+	position: absolute;
+	top: 73%;
+	right: 1%;
+}
+/*indexここまで*/
+
+/*valueここから*/
+.value {
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.value h2 {
+	margin: 0;
+	font-size: 25px;
+}
+.value p {
+	font-size: 18px;
+	line-height: 1.8;
+}
+.value img {
+	width: 44%;
+	height: auto;
+}
+.val1, .val3 {
+	float: right;
+	margin-left: 50px;
+}
+.val2 {
+	float: left;
+	margin-right: 50px;
+}
+/*valueここまで*/
+
+/*menuここから*/
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.menu figure {
+	width: 220px;
+	height: 300px;
+	margin: 20px;
+}
+.menu img {
+	width: 220px;
+	height: 180px;
+	margin-bottom: 20px;
+}
+.menu figcaption {
+	font-size: 18px;
+}
+/* menuここまで */
+
+/*shopここから*/
+.shop img {
+	max-width: 100%;
+	height: auto;
+}
+.shop table {
+	border-collapse: collapse;
+	width: 80%;
+	margin: 50px auto;
+	font-size: 18px;
+}
+table th, table td {
+	padding: 15px;
+	border: 3px solid #7CB9D7;
+}
+.map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/*shopここまで*/
+
+
+/* 900px以上-------------- */
+@media (min-width: 900px) {
+  body {
+		width: 810px;
+	}
+}
+
+
+
+/* 600px以下-------------- */
+@media (max-width: 600px) {
+	header {
+		display: flex;
+		align-items: center;
+	}
+	header h1 {
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		width: 324px;
+		height: auto;
+	}
+	header h1 a img {
+		width: 90%;
+	}
+	header .btn {
+		display: block;
+		cursor: pointer;
+	}
+	header nav {
+		position: fixed;
+		top: 80px;
+		right: 0;
+		display: none;
+		z-index: 10;
+		background-color: rgba(252, 227, 9, 0.9);
+		width: 220px;
+		height: auto;
+	}
+	header ul {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	header li {
+		display: block;
+	}
+	.breadcrumb ul {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+	}
+	.btn, .btn span {
+		display: inline-block;
+		transition: all 0.4s;
+		box-sizing: border-box;
+	}
+	.btn {
+		z-index: 20;
+		position: relative;
+		width: 40px;
+		height: 36px;
+	}
+	.btn span {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background-color: #7CB9D7;
+		border-radius: 4px;
+	}
+	.btn span:nth-of-type(1) {
+		top: 0;
+	}
+	.btn span:nth-of-type(2) {
+		top: 16px;
+	}
+	.btn span:nth-of-type(3) {
+		bottom: 0;
+	}
+	.btn.active span:nth-of-type(1) {
+		transform: translateY(16px) rotate(-45deg);
+	}
+	.btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	.btn.active span:nth-of-type(3) {
+		transform: translateY(-16px) rotate(45deg);
+	}
+	.theme img {
+		width: 320px;
+		height: auto;
+	}
+
+/* 600以下のindexここから */
+.slideshow {
+	margin: 15px 0 0 0;
+}
+.news {
+	padding: 0 10px;
+}
+.news h2 {
+	margin: 20px 0 0 0;
+	font-size: 25px;
+}
+.news li {
+	flex-direction: column;
+	font-size: 16px;
+}
+.day {
+	margin-left: 25px;
+	width: 95%;
+	justify-content: flex-start;
+}
+.text {
+	margin-right: auto;
+}
+.like h2 {
+	font-size: 25px;
+	width: 90%;
+	text-align: left;
+}
+/* 600以下のindexここまで */
+
+/*600以下のvalueここから*/
+.value h2 {
+	font-size: 20px;
+}
+.value p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.value img {
+	width: 100%;
+	height: auto;
+}
+.val1, .val2, .val3 {
+	float: none;
+	margin: 0;
+}
+/*600以下のvalueここまで*/
+
+/*600以下のmenuここから*/
+.menu figure {
+	width: 150px;
+	height: 204px;
+	margin: 14px;
+}
+.menu img {
+	width: 150px;
+	height: 122px;
+	margin-bottom: 14px;
+}
+.menu figcaption {
+	font-size: 16px;
+}
+/* 600以下のmenuここまで */
+
+/*600以下のshopここから*/
+.shop table {
+	font-size: 16px;
+}
+/*600以下のshopここまで*/
+}
+
+

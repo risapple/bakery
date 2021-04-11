@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>風のベーカリー - こだわり</title>
+  <meta name="description" content="毎日食べたいこだわりのパン屋さん">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/f53b9b4dd9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html"><img src="images/kaze-logo.png" alt="風のベーカリー"></a>
+    </h1>
+    <a class="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/nav-home.png" alt="ホーム"></a></li>
+        <li><a href="value.html"><img src="images/nav-value.png" alt="こだわり"></a></li>
+        <li><a href="menu.html"><img src="images/nav-menu.png" alt="メニュー"></a></li>
+        <li><a href="shop.html"><img src="images/nav-shop.png" alt="お店"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="breadcrumb">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li>VALUE</li>
+    </ul>
+  </div>
+  <article>
+    <a class="theme">
+      <img src="images/value-logo.png" alt="私たちのこだわり">
+    </a>
+    <section class="value">
+			<h2><i class="fas fa-bread-slice"></i>品質について</h2>
+			<p><img src="images/value1.jpg" alt="" class="val1">私たちはパンの種類によって複数の国産小麦を使い分けています。北海道産のゆめちから、兵庫県産のせときらら、福岡県産のミナミノカオリを中心に配合しています。</p>
+      <p>パン酵母は果物を使用した自家製で、乳製品や砂糖、油は添加物・保存料を使わない出来る限りオーガニックの物を選んでいます。お子様にも安心して召し上がって頂けます。</p>
+		</section>
+		<section class="value">
+			<h2><i class="fas fa-bread-slice"></i>製造について</h2>
+			<p><img src="images/value2.jpg" alt="" class="val2">昔ながらの石窯と最新のオーブン機器を併用し、パンに合わせて日々焼き加減を調整しています。ひとつひとつの生地やパンに愛情を込めつつ、たくさんのお客様に届けられるように手際良く作っていきます。</p>
+      <p>店頭もキッチンも毎日スタッフ全員でピカピカにして、誰もが気持ちよく過ごせる空間を目指しています。</p>
+		</section>
+		<section class="value">
+			<h2><i class="fas fa-bread-slice"></i>販売について</h2>
+			<p><img src="images/value3.jpg" alt="" class="val3">『安心・楽しい・あったかい』を合言葉にパンを提供しています。パンのご予約や温め直しなどお客様に喜んで頂けるようにご要望をお伺いします。</p>
+      <p>季節やイベントに合わせた期間限定パンの販売などお客様の日常に彩を添える店でありたいと思っています。</p>
+		</section>
+  </article>
+  <footer>
+    <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+    <p><small>Copyright &copy;2021 Kazeno Bakery All Rights Reserved.</small></p>
+  </footer>
+  <script>
+    $('.btn').on('click',function() {
+      if( $(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('nav').addClass('close').removeClass('open');
+      } else {
+        $(this).addClass('active');
+        $('nav').addClass('open').removeClass('close');
+      }
+    })
+  </script>
+  <script>
+    jQuery(function() {
+      var pagetop = $('#page_top');
+      pagetop.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 800)
+        {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
